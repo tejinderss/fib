@@ -19,7 +19,7 @@ The following assumes you have all of the recommended tools listed above install
 
 #### 1. Clone the project:
 
-    $ git clone git@github.com:tejinderss/fib.git
+    $ git clone https://github.com/tejinderss/fib.git
     $ cd fib
 
 #### 2. Create and initialize virtualenv for the project:
@@ -35,7 +35,7 @@ The following assumes you have all of the recommended tools listed above install
 
     $ FLASK_APP=fib/fib.py flask run
 
-#### 5. Open [http://localhost:5000](http://localhost:5000)
+#### 5. Open [http://localhost:5000/fib/5](http://localhost:5000/fib/5)
 
 
 ### Development
