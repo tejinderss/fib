@@ -44,6 +44,6 @@ def get_fib_sequence(num):
         _validate_num(num)
     except ValueError as e:
         error = {"error": str(e)}
-        return make_response(error, 400)
+        return make_response(jsonify(error), 400)
     seq = list(islice(fib(), num))
     return jsonify(seq)
