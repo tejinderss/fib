@@ -21,6 +21,10 @@ class FibTestCase(unittest.TestCase):
         rv = self.app.get('/fib/-3')
         self.assertEquals(rv.status_code, 404)
 
+    def test_validate_num(self):
+        with self.assertRaises(ValueError):
+            fib.fib._validate_num(-10)
+
 
 if __name__ == "__main__":
     unittest.main()
